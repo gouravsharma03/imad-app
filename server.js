@@ -61,7 +61,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/:name',function(req,res){
-    var name = req.parans.name;
+    var name = req.params.name;
   res.send(createtemp(ar[name]));
                          });
 
