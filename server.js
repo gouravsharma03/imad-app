@@ -25,7 +25,7 @@ var htmlTemp =
       </title>
       <link href="/ui/style.css" rel="stylesheet" />
      </head>
-    <body><div class="arone">
+    <body><div class="ar">
      <div>
         <a href ="/">home</a>
      </div>
