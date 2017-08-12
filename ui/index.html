@@ -16,11 +16,15 @@
            var element = document.getElementById('text');
            element.innerHTML = 'words get change';
            var ph = document.getElementById('mask');
-           ph.onmouseover= function(){
-               ph.style.marginLeft = '100px';
-           };
-            ph.onmouseleave= function(){
-               ph.style.marginRight = '100px';
+           var marginLeft = 0;
+           function ()
+           {marginLeft = marginLeft+5;
+           ph.style.marginLeft = marginLeft+'px';
+               
+           }
+           ph.onmouseclick= function()
+           {var interval = setInterval(moveright,50);
+               
            };
            </script>
 
