@@ -13,12 +13,14 @@ var ar = {
        content: 'this is a article one'
          
      },
-     'artwo'  :{title: 'Article-two',
+     'artwo'  :{
+         title: 'Article-two',
       heading:'welcome to article two',
        content: 'this is a article two'
          
      },
-     'arthree': {title: 'Article-three',
+     'arthree': {
+         title: 'Article-three',
       heading:'welcome to article three',
        content: 'this is a article three'
          
@@ -59,7 +61,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/:name',function(req,res){
-    var name = req.params.name;
+    var name = req.parans.name;
   res.send(createtemp(ar[name]));
                          });
 
