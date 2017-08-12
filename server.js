@@ -5,41 +5,42 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
 var arone = {
     title: 'Article-one',
    heading:'welcome to article one',
-   content: '<p>this is the first article . and here we will go thorouhg the concepts of luck</p>'
+   content: 'this is a article one'
 };
- function createtemp (data){
-   var title = data.title;
-   var heading = data.heading;
-   var content = data.content;
-    
- var htmltemp = 
-    <html>
-        <head>
-          <title>${title}</title>
-         <link href="/ui/style.css" rel="stylesheet" />
-        </head>
-     <body>
-       <div class="ar">
-         <div>
-          <a href ="/">home</a>
-         </div>
-         <hr>
-          <div>
-           <h4>${heading}</h4>
-           ${content}
-          </div>
-       </div>
-     </body>
+function createtemp(data)
+{
+ var title = data.title;
+var heading = data.heading;
+var content= data.content;
+
+var htmlTemp = 
+    ` <html>
+     <head>
+      <title>
+      ${title}
+      </title>
+      <link href="/ui/style.css" rel="stylesheet" />
+     </head>
+    <body><div class="arone">
+     <div>
+        <a href ="/">home</a>
+     </div>
+      <hr>
+        <div>
+        <h4>${heading}</h4>
+        ${content}
+        </div>
+    </div>
+    </body>
     </html>
-
+`;
+return htmltemp;
+}
  
-     return htmltemp;
-};
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
