@@ -59,9 +59,9 @@ return htmlTemp;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/:articleName',function(req,res){
-    var articleName = req.params.articleName;
-  res.send(createtemp(articles[articleName]));
+app.get('/:name',function(req,res){
+    var name = req.params.name;
+  res.send(createtemp(articles[name]));
                          });
 
 
