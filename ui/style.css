@@ -26,6 +26,7 @@ body {
     padding-top:100px;
     padding-left:30px;
     padding-right:30px;
+    font-size: xx-large;
 }
 .artwo{ 
     max-width:800px;
@@ -44,4 +45,5 @@ body {
        padding-left:100px;
        margin:0 auto;
        padding-right:100px;
+       font-size: xx-large;
 }
