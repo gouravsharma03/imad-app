@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles = {
+var ar = {
      'arone' : {
       title: 'Article-one',
       heading:'welcome to article one',
@@ -26,13 +26,12 @@ var articles = {
 
     
 };
-function createtemp(data)
-{
+function createtemp(data) {
  var title = data.title;
-var heading = data.heading;
-var content= data.content;
+ var heading = data.heading;
+ var content= data.content;
 
-var htmlTemp = 
+ var htmlTemp = 
     ` <html>
          <head>
           <title>
@@ -53,7 +52,7 @@ var htmlTemp =
         </body>
     </html>
 `;
-return htmlTemp;
+ return htmlTemp;
 }
  
 app.get('/', function (req, res) {
@@ -61,7 +60,7 @@ app.get('/', function (req, res) {
 });
 app.get('/:name',function(req,res){
     var name = req.params.name;
-  res.send(createtemp(articles[name]));
+  res.send(createtemp(ar[name]));
                          });
 
 
