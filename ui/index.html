@@ -8,20 +8,13 @@
             <img src="/ui/mask.png" class="img-medium"/>
         </div>
         <br>
-        <div class="center text-big bold">
+        <div id = "text" class="center text-big bold">
             <H1>hey you all there how are you all </H1>
 			<H4>this should work now </H4>
         </div>
         <script>
-            var ph =document.getElementById('mask');
-            ph.onmouseover = function()
-            {   ph.style.margin= '100px';
-                ph.style.height= '400px';
-                
-            };
-            ph.onmouseleave=function(){
-                ph.style.height='100px';
-            };
+           var element = document.getElementById('text');
+           element.inneHTML = 'words get change';
         </script>
 
         <script type="text/javascript" src="/ui/main.js">
