@@ -7,13 +7,13 @@ app.use(morgan('combined'));
 
 
 var ar = {
-     'arone' : {
+     'arone'  : {
       title: 'Article-one',
       heading:'welcome to article one',
        content: 'this is a article one'
          
      },
-     'artwo' :{title: 'Article-two',
+     'artwo'  :{title: 'Article-two',
       heading:'welcome to article two',
        content: 'this is a article two'
          
