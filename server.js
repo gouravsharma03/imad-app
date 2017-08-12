@@ -37,7 +37,7 @@ var htmlTemp =
     </div>
     </body>
     </html>
-`;
+';
 return htmltemp;
 }
  
