@@ -44,7 +44,7 @@ body {
        padding-top:100px;
        padding-left:100px;
        margin:0 auto;
-       font-family: monotype-corsiva;
+       font-family: inherit;
        padding-right:100px;
        font-size: xx-large;
 }
