@@ -19,4 +19,29 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.arone{
+    max-width:800px;
+    margin:0 auto;
+    color:#1cc6dc;
+    padding-top:100px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.artwo{ 
+    max-width:800px;
+    margin: 0 auto;
+    color: #cd8fd8;
+    font-family: sans-serif;
+    padding-top:100px;
+    padding-right:30px;
+    padding-left:30px;
+    font-size: larger;
+        
+}
+.arthree{ 
+       color:green;
+       padding-top:100px;
+       padding-left:100px;
+       margin:0 auto;
+       padding-right:100px;
+}
