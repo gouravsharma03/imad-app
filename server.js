@@ -10,7 +10,7 @@ var arone = {
    heading:'welcome to article one',
    content: '<p>this is the first article . and here we will go thorouhg the concepts of luck</p>'
 };
- function createtemp(data){
+ function createtemp (data){
    var title = data.title;
    var heading = data.heading;
    var content = data.content;
@@ -44,7 +44,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one',function(req,res){
-  res.send(createtemp((arone));
+  res.send(createtemp(arone));
                          });
 app.get('/article-two',function(req,res){
   res.sendFile(path.join(__dirname,'ui','article-two.html'));
