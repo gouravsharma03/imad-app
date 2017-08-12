@@ -19,7 +19,7 @@ body {
 .img-medium {
     height: 400px;
 }
-.arone{
+.ar{
     max-width:800px;
     margin:0 auto;
     color:#1cc6dc;
@@ -28,23 +28,4 @@ body {
     padding-right:30px;
     font-size: xx-large;
 }
-.artwo{ 
-    max-width:800px;
-    margin: 0 auto;
-    color: #cd8fd8;
-    font-family: sans-serif;
-    padding-top:100px;
-    padding-right:30px;
-    padding-left:30px;
-    font-size: larger;
-        
-}
-.arthree{ 
-       color: #989191;
-       padding-top:100px;
-       padding-left:100px;
-       margin:0 auto;
-       font-family: inherit;
-       padding-right:100px;
-       font-size: xx-large;
-}
+
